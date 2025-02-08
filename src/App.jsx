@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 import Profile from './Profile'
 import userData from './user.json'
 import FriendList from './FriendList'
