@@ -15,16 +15,16 @@ export default function Profile({name, tag, location, image, stats} ) {
         
 
         <ul className="profile-stats">
-            <li className="profile-stats-item">
-                <span className="profile-stat-label">Followers: </span>
+            <li className="profile-stat-item">
+                <span className="profile-stat-label">Followers</span>
                 <span className="profile-stat-value">{stats.followers}</span>
             </li>
-            <li>
-                <span className="profile-stat-label">Views: </span>
+            <li className="profile-stat-item">
+                <span className="profile-stat-label">Views</span>
                 <span className="profile-stat-value">{stats.views}</span>
             </li>
-            <li>
-                <span className="profile-stat-label">Likes: </span>
+            <li className="profile-stat-item">
+                <span className="profile-stat-label">Likes</span>
                 <span className="profile-stat-value">{stats.likes}</span>
             </li>
         </ul>

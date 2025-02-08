@@ -1,17 +1,23 @@
 /* General card styling */
 .profile-card {
+    
     width: 300px;
     background-color: white;
-    border: 2px solid: black;
+    border: 2px solid black;
     border-radius: 10px;
-    overflow: hidden;
     text-align: center;
     font-family: Arial, sans-serif;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0;
+    
+    
     
   }
   
-  /* Profile avatar */
+ 
   .profile-avatar {
     width: 100px;
     height: 100px;
@@ -29,46 +35,71 @@
     color: #000;
   }
   
-  /* Username (tag) */
+  
   .profile-tag {
     font-size: 16px;
     color: gray;
     margin: 5px 0;
   }
   
-  /* Location */
+  
   .profile-location {
     font-size: 16px;
     color: gray;
     margin-bottom: 15px;
   }
   
-  /* Stats container */
+  
   .profile-stats {
-    display: flex;
+    display: flex; 
+    flex-direction: row; 
+    padding: 0;
+    border-top: 1px solid gray;
+    margin-top: auto;
     justify-content: space-between;
-    background-color: #e0e0e0;
-    padding: 10px 0;
-    
     list-style: none;
+    width: 100%;
+    margin-bottom: auto;
+    
+    
+   
+   
+   
+    
   }
   
-  /* Individual stat item */
+
+  
   .profile-stat-item {
     flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
     padding: 10px;
-    border-right: 1px solid #ccc;
-  }
+    border-right: 1px solid gray;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+   
+}
   
-  .profile-stat-item:last-child {
+ .profile-stat-item:last-child {
     border-right: none;
+    border-bottom-right-radius: 10px;
+  } 
+  
+  .profile-stat-item:first-child {
+    border-radius: none;
+    border-bottom-left-radius: 10px;
   }
+ 
   
   /* Stat labels */
   .profile-stat-label {
     font-size: 14px;
     color: black;
+   
+    
   }
   
   /* Stat values */

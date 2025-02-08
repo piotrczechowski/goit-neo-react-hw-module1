@@ -3,13 +3,23 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: black
 }
 
 body {
   display: flex;
-  justify-content: center;
+  
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  align-items: center;
+ 
+
+
 }
