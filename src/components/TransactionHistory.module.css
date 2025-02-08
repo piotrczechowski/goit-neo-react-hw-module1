@@ -1,46 +1,49 @@
+/* TransactionHistory.module.css */
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 0.9em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  thead tr {
-    background-color: darkslategrey;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  th,
-  td {
-    padding: 12px 15px;
-    border: 1px solid #dddddd;
-  }
-  
-  tbody tr {
-    text-align: center;
-    border-bottom: 1px solid #dddddd;
-  }
-  
- 
-  
-  tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  
- 
-  tbody tr:nth-of-type(odd) {
-    background-color: #f3f3f3; 
-  }
-  
-  tbody tr:nth-of-type(even) {
-    background-color: #ffffff; 
-  }
-  
-  tbody tr:hover {
-    background-color: grey;
-  }
+/* Style the table header row */
+.table thead tr {
+  background-color: darkslategrey;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Style table header and data cells */
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+/* Style the table body rows */
+.table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Style the last row */
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+/* Apply background colors for alternating rows */
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3; 
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #ffffff; 
+}
+
+/* Hover effect for rows */
+.table tbody tr:hover {
+  background-color: grey;
+}
