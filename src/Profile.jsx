@@ -1,44 +1,35 @@
+import "./Profile.css";
+
 export default function Profile({name, tag, location, image, stats} ) {
     
-    const userData = {
-        name: 'Jacques Gluke',
-        tag: 'jgluke',
-        location: 'Ocho Rios, Jamaica',
-        avatar:
-          'https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg',
-        stats: {
-          followers: 5603,
-          views: 4827,
-          likes: 1308,
-        },  
-    }
+
     
     return ( 
-        <> 
-        <div>
-            <img src={image} alt={`${name} avatar`} />
-            <p>{name}</p>
-            <p>@{tag}</p>
-            <p>{location}</p>
+        
+        <div className="profile-card">
+            <img src={image} alt={`${name} avatar`} className="profile-avatar"/>
+            <p className="profile-name">{name}</p>
+            <p className="profile-tag">@{tag}</p>
+            <p className="profile-location">{location}</p>
             
-        </div>
+        
 
-        <ul>
-            <li>
-                <span>Followers</span>
-                <span>{stats.followers}</span>
+        <ul className="profile-stats">
+            <li className="profile-stats-item">
+                <span className="profile-stat-label">Followers: </span>
+                <span className="profile-stat-value">{stats.followers}</span>
             </li>
             <li>
-                <span>Views</span>
-                <span>{stats.views}</span>
+                <span className="profile-stat-label">Views: </span>
+                <span className="profile-stat-value">{stats.views}</span>
             </li>
             <li>
-                <span>Likes</span>
-                <span>{stats.likes}</span>
+                <span className="profile-stat-label">Likes: </span>
+                <span className="profile-stat-value">{stats.likes}</span>
             </li>
         </ul>
 
-        </>
+        </div>
        
     )
 }

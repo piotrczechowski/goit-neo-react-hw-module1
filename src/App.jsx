@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import Profile from './Profile'
 import userData from './user.json'
 import FriendList from './FriendList'
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Profile 
-      name={userData.name} 
+      name={userData.username} 
       tag={userData.tag}
       location={userData.location} 
       image={userData.avatar}

@@ -1,0 +1,77 @@
+/* General card styling */
+.profile-card {
+    width: 300px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile avatar */
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+    display: block;
+    background-color: #f4f4f4;
+  }
+  
+ 
+  .profile-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #000;
+  }
+  
+  /* Username (tag) */
+  .profile-tag {
+    font-size: 16px;
+    color: gray;
+    margin: 5px 0;
+  }
+  
+  /* Location */
+  .profile-location {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 15px;
+  }
+  
+  /* Stats container */
+  .profile-stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 10px 0;
+    border-top: 2px solid #ccc;
+  }
+  
+  /* Individual stat item */
+  .profile-stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .profile-stat-item:last-child {
+    border-right: none;
+  }
+  
+  /* Stat labels */
+  .profile-stat-label {
+    font-size: 14px;
+    color: black;
+  }
+  
+  /* Stat values */
+  .profile-stat-value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
