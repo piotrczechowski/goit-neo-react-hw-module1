@@ -1,9 +1,9 @@
 import FriendListItem from "./FriendListItem";
-import "./FriendList.css"; 
+import styles from "./FriendList.module.css"
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friendList}>
       {friends.map(({ id, avatar, name, isOnline }) => (
         <li key={id}>
           <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />

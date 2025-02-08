@@ -1,0 +1,42 @@
+/* FriendListItem.module.css */
+
+.friendCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; 
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  height: 150px;
+}
+
+.friendCard img {
+  width: 50%;
+  height: 50px;
+  border: none;
+  padding: 0;
+}
+
+.friendName {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  margin: 5px;
+}
+
+.statusOnline {
+  color: green;
+  padding: 0;
+  margin: 0;
+}
+
+.statusOffline {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
